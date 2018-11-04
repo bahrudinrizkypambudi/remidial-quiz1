@@ -33,7 +33,17 @@ public class Transaksi {
         this.pelanggan = pelanggan;
     }
     
-    public void print(){
-        
+        public int hitungBaiayaTotal(){
+        return this.kamera.hitungBiayakamera(this.pelanggan.getHari());
     }
+    
+    public void print(){
+        System.out.println(" ------------RENTAL KAMERA----------------");
+        System.out.println(" |Nama        : "+this.pelanggan.getNama());
+        System.out.println(" |Jumlah hari : "+this.pelanggan.getHari());
+        System.out.println(" |Merk        : "+this.kamera.getMerk());
+        System.out.println(" |Biaya       : "+this.kamera.getBiaya());
+        System.out.println(" |Biaya Total : "+this.hitungBaiayaTotal());
+    }
+    
 }
