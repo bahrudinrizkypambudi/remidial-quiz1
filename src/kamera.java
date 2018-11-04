@@ -30,6 +30,8 @@ public class kamera {
     public void setBiaya(int biaya) {
         this.biaya = biaya;
     }
-    
+    public int hitungBiayakamera(int hari){
+        return biaya*hari;
+    }
     
 }
