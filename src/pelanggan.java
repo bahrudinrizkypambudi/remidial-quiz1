@@ -38,6 +38,6 @@ public class pelanggan {
     }
     
     public int hitungBaiayaTotal(){
-        return kamera.hitungBiayaMobil;
+        return kamera.hitungBiayakamera;
     }
 }
